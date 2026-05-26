@@ -154,9 +154,14 @@
             font-family: 'Outfit', sans-serif;
             font-size: 1.1rem;
             font-weight: 800;
-            color: var(--text-primary);
+            color: #FEF7ED; /* Accessible light contrast at top fold */
             line-height: 1;
             letter-spacing: 0.04em;
+            transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        #navbar.scrolled .nav-logo-text .main {
+            color: var(--text-primary); /* Primary dark color when scrolled */
         }
 
         .nav-logo-text .sub {
@@ -176,7 +181,7 @@
         }
 
         .nav-links a {
-            color: var(--text-secondary);
+            color: rgba(254, 247, 237, 0.78); /* High contrast light tone at top fold */
             text-decoration: none;
             font-size: 0.82rem;
             font-weight: 600;
@@ -189,12 +194,27 @@
         }
 
         .nav-links a:hover {
-            color: var(--saffron-contrast);
-            background-color: rgba(212, 98, 11, 0.06);
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.08);
             transform: scale(1.02);
         }
 
         .nav-links a.active {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        /* Scrolled state links */
+        #navbar.scrolled .nav-links a {
+            color: var(--text-secondary);
+        }
+
+        #navbar.scrolled .nav-links a:hover {
+            color: var(--saffron-contrast);
+            background-color: rgba(212, 98, 11, 0.06);
+        }
+
+        #navbar.scrolled .nav-links a.active {
             color: var(--saffron-contrast);
             background-color: rgba(212, 98, 11, 0.1);
         }
@@ -224,8 +244,12 @@
             display: block;
             width: 24px;
             height: 2px;
-            background: var(--white);
+            background: #FEF7ED; /* Light at the top fold */
             transition: all 0.3s;
+        }
+
+        #navbar.scrolled .hamburger span {
+            background: var(--text-primary); /* Dark when scrolled */
         }
 
         .hamburger.open span:nth-child(1) {
