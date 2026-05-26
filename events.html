@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events — Think India NIT Patna</title>
+    <meta name="description" content="Upcoming and ongoing events by Think India NIT Patna — Youth Jam, National Debate, Policy Challenges and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    
+
+    <!-- TRICOLOUR BAR -->
+    <div class="tricolour-bar">
+        <div></div><div></div><div></div>
+    </div>
+    <div class="scroll-progress" id="scrollProg"></div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg class="nav-logo-chakra" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="46" stroke="#FF9933" stroke-width="1.5" />
+                <circle cx="50" cy="50" r="5" fill="#000080" />
+                <circle cx="50" cy="50" r="2" fill="#FF9933" />
+                <g stroke="#000080" stroke-width="1">
+                    <line x1="50" y1="4" x2="50" y2="45" /><line x1="69.1" y1="9.3" x2="54.8" y2="47.5" />
+                    <line x1="84.7" y1="22.3" x2="56.1" y2="52.3" /><line x1="93.3" y1="40.8" x2="55.5" y2="52.1" />
+                    <line x1="93.3" y1="59.2" x2="55.5" y2="47.9" /><line x1="84.7" y1="77.7" x2="56.1" y2="47.7" />
+                    <line x1="69.1" y1="90.7" x2="54.8" y2="52.5" /><line x1="50" y1="96" x2="50" y2="55" />
+                    <line x1="30.9" y1="90.7" x2="45.2" y2="52.5" /><line x1="15.3" y1="77.7" x2="43.9" y2="47.7" />
+                    <line x1="6.7" y1="59.2" x2="44.5" y2="47.9" /><line x1="6.7" y1="40.8" x2="44.5" y2="52.1" />
+                    <line x1="15.3" y1="22.3" x2="43.9" y2="52.3" /><line x1="30.9" y1="9.3" x2="45.2" y2="47.5" />
+                    <line x1="59.5" y1="5.5" x2="51.6" y2="45.2" /><line x1="78.5" y1="15" x2="55.2" y2="49.5" />
+                    <line x1="91.5" y1="31.8" x2="54.8" y2="51.4" /><line x1="96.5" y1="50" x2="55" y2="50" />
+                    <line x1="91.5" y1="68.2" x2="54.8" y2="48.6" /><line x1="78.5" y1="85" x2="55.2" y2="50.5" />
+                    <line x1="59.5" y1="94.5" x2="51.6" y2="54.8" /><line x1="40.5" y1="94.5" x2="48.4" y2="54.8" />
+                    <line x1="21.5" y1="85" x2="44.8" y2="50.5" /><line x1="8.5" y1="68.2" x2="45.2" y2="48.6" />
+                </g>
+            </svg>
+            <div class="nav-logo-text">
+                <span class="main">Think India</span>
+                <span class="sub">NIT Patna</span>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#vision">Vision</a></li>
+            <li><a href="index.html#activities">Activities</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="nav-cta-li"><a href="contact.html" class="nav-cta">Join Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html" onclick="closeMenu()">About</a>
+        <a href="index.html#vision" onclick="closeMenu()">Vision</a>
+        <a href="events.html" onclick="closeMenu()">Events</a>
+        <a href="team.html" onclick="closeMenu()">Team</a>
+        <a href="gallery.html" onclick="closeMenu()">Gallery</a>
+        <a href="blog.html" onclick="closeMenu()">Blog</a>
+        <a href="contact.html" class="cta-mob" onclick="closeMenu()">Join Us →</a>
+    </div>
+
+    <!-- EVENTS HERO -->
+    <section class="events-page-hero">
+        <div class="events-hero-bg-text">EVENTS</div>
+        <div class="hero-stripe"><div></div><div></div><div></div></div>
+        <div class="events-hero-content">
+            <div class="hero-flag-badge">
+                <div class="flag-mini">
+                    <div></div>
+                    <div><div class="dot"></div></div>
+                    <div></div>
+                </div>
+                <span>Think India NIT Patna · 2026</span>
+            </div>
+            <div class="hero-devanagari">राष्ट्र प्रथम</div>
+            <h1 class="events-hero-heading">Events &amp; <span class="saffron-word">Competitions</span></h1>
+            <p class="events-hero-sub">From national-level ideathons to ground-level community drives — here's where ideas become action. Register for upcoming events or relive our past milestones.</p>
+            <div class="events-live-count">
+                <div class="elc-dot"></div>
+                <span id="liveEventCount">1</span> event happening right now
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <div class="ev-filter-strip">
+        <div class="container ev-filter-inner">
+            <button class="ev-filter-btn active" data-filter="all" onclick="filterEvents('all', this)">All Events</button>
+            <button class="ev-filter-btn ev-filter-live" data-filter="live" onclick="filterEvents('live', this)">
+                <span class="btn-live-dot"></span> Live Now
+            </button>
+            <button class="ev-filter-btn" data-filter="upcoming" onclick="filterEvents('upcoming', this)">Upcoming</button>
+            <button class="ev-filter-btn" data-filter="past" onclick="filterEvents('past', this)">Past Events</button>
+        </div>
+    </div>
+
+    <!-- ─── ONGOING / LIVE EVENTS ─── -->
+    <section class="section-pad" id="live-events">
+        <div class="container">
+            <div class="sec-label reveal">Happening Now</div>
+            <h2 class="sec-title reveal rd1">Live <span class="accent">Events</span></h2>
+
+            <div class="events-full-grid" id="liveGrid">
+                <!-- Youth Jam 2026 — ONGOING -->
+                <article class="ev-full-card ev-card-live event-item" data-status="live">
+                    <div class="ev-full-image-wrap">
+                        <div class="calendar-badge">
+                            <span class="month">MAR</span>
+                            <span class="day">17</span>
+                        </div>
+                        <img src="ev-youth-jam.png" alt="Youth Jam 2026" class="ev-full-img" loading="lazy">
+                        <div class="ev-full-img-overlay"></div>
+                        <span class="ev-status-badge ev-badge-live">
+                            <span class="live-pulse"></span> LIVE NOW
+                        </span>
+                        <div class="ev-full-date-chip">Mar 17–18, 2026</div>
+                    </div>
+                    <div class="ev-full-body">
+                        <div class="ev-full-meta">
+                            <span class="ev-tag ev-tag-s">Ideathon</span>
+                            <span class="ev-meta-sep">·</span>
+                            <span class="ev-meta-venue">📍 NIT Patna, Main Auditorium</span>
+                        </div>
+                        <h3 class="ev-full-title">Youth Jam 2026</h3>
+                        <p class="ev-full-desc">Two days of intense ideation, keynote talks from national leaders, and collaborative problem-solving on India's defining issues. Teams of 3–5 compete for the national title. Open to all registered NIT Patna students.</p>
+                        <div class="ev-full-info-row">
+                            <div class="ev-info-item">
+                                <span class="ev-info-icon">📅</span>
+                                <span>Mar 17–18, 2026 · 9:00 AM onward</span>
+                            </div>
+                            <div class="ev-info-item">
+                                <span class="ev-info-icon">👥</span>
+                                <span>Teams of 3–5 members</span>
+                            </div>
+                            <div class="ev-info-item">
+                                <span class="ev-info-icon">🏆</span>
+                                <span>Prize Pool: ₹25,000</span>
+                            </div>
+                        </div>
+                        <div class="ev-full-actions">
+                            <a href="index.html#join" class="btn-saffron">Register Now →</a>
+                            <a href="#" class="btn-ghost-sm">View Schedule</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── UPCOMING EVENTS ─── -->
+    <section class="section-pad ev-upcoming-section" id="upcoming-events">
+        <div class="container">
+            <div class="sec-label reveal">Coming Soon</div>
+            <h2 class="sec-title reveal rd1">Upcoming <span class="accent">Events</span></h2>
+
+            <div class="events-full-grid" id="upcomingGrid">
+
+                <!-- National Debate Championship -->
+                <article class="ev-full-card event-item" data-status="upcoming">
+                    <div class="ev-full-image-wrap">
+                        <div class="calendar-badge">
+                            <span class="month">APR</span>
+                            <span class="day">05</span>
+                        </div>
+                        <img src="ev-debate.png" alt="National Debate Championship" class="ev-full-img" loading="lazy">
+                        <div class="ev-full-img-overlay"></div>
+                        <span class="ev-status-badge ev-badge-upcoming">UPCOMING</span>
+                        <div class="ev-full-date-chip">Apr 5, 2026</div>
+                    </div>
+                    <div class="ev-full-body">
+                        <div class="ev-full-meta">
+                            <span class="ev-tag ev-tag-g">Debate</span>
+                            <span class="ev-meta-sep">·</span>
+                            <span class="ev-meta-venue">📍 NIT Patna, Seminar Hall</span>
+                        </div>
+                        <h3 class="ev-full-title">National Debate Championship</h3>
+                        <p class="ev-full-desc">Inter-college debate championship covering policy, governance, and social reform — bringing together India's sharpest student minds for national-level intellectual combat. Motions announced one week prior.</p>
+                        <div class="ev-full-info-row">
+                            <div class="ev-info-item"><span class="ev-info-icon">📅</span><span>April 5, 2026 · 10:00 AM</span></div>
+                            <div class="ev-info-item"><span class="ev-info-icon">👥</span><span>Pairs of 2</span></div>
+                            <div class="ev-info-item"><span class="ev-info-icon">🏆</span><span>Certificate + National Recognition</span></div>
+                        </div>
+                        <div class="ev-countdown-wrap">
+                            <div class="ev-countdown-label">Starts in</div>
+                            <div class="ev-countdown" data-target="2026-04-05T10:00:00">
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd1-d">--</span><span class="ev-cd-label">Days</span></div>
+                                <div class="ev-cd-sep">:</div>
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd1-h">--</span><span class="ev-cd-label">Hours</span></div>
+                                <div class="ev-cd-sep">:</div>
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd1-m">--</span><span class="ev-cd-label">Mins</span></div>
+                                <div class="ev-cd-sep">:</div>
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd1-s">--</span><span class="ev-cd-label">Secs</span></div>
+                            </div>
+                        </div>
+                        <div class="ev-full-actions">
+                            <a href="index.html#join" class="btn-saffron">Register Now →</a>
+                            <button class="btn-ghost-sm" onclick="downloadICS('National Debate Championship', 'Inter-college debate championship on policy, governance & social reform by Think India NIT Patna.', 'NIT Patna Seminar Hall', '2026-04-05T10:00:00', '2026-04-05T17:00:00')">📅 Add to Calendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Policy Drafting Challenge -->
+                <article class="ev-full-card event-item" data-status="upcoming">
+                    <div class="ev-full-image-wrap">
+                        <div class="calendar-badge">
+                            <span class="month">MAY</span>
+                            <span class="day">02</span>
+                        </div>
+                        <img src="ev-policy.png" alt="Policy Drafting Challenge" class="ev-full-img" loading="lazy">
+                        <div class="ev-full-img-overlay"></div>
+                        <span class="ev-status-badge ev-badge-upcoming">UPCOMING</span>
+                        <div class="ev-full-date-chip">May 2, 2026</div>
+                    </div>
+                    <div class="ev-full-body">
+                        <div class="ev-full-meta">
+                            <span class="ev-tag ev-tag-b">Policy</span>
+                            <span class="ev-meta-sep">·</span>
+                            <span class="ev-meta-venue">📍 NIT Patna, CSE Department</span>
+                        </div>
+                        <h3 class="ev-full-title">Policy Drafting Challenge</h3>
+                        <p class="ev-full-desc">Teams of 3–4 research a real national policy problem and present a comprehensive brief to a panel of academics and practitioners. The best briefs are submitted to Think India's national convention and published.</p>
+                        <div class="ev-full-info-row">
+                            <div class="ev-info-item"><span class="ev-info-icon">📅</span><span>May 2, 2026 · 9:00 AM</span></div>
+                            <div class="ev-info-item"><span class="ev-info-icon">👥</span><span>Teams of 3–4</span></div>
+                            <div class="ev-info-item"><span class="ev-info-icon">🏆</span><span>National Publication Opportunity</span></div>
+                        </div>
+                        <div class="ev-countdown-wrap">
+                            <div class="ev-countdown-label">Starts in</div>
+                            <div class="ev-countdown" data-target="2026-05-02T09:00:00">
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd2-d">--</span><span class="ev-cd-label">Days</span></div>
+                                <div class="ev-cd-sep">:</div>
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd2-h">--</span><span class="ev-cd-label">Hours</span></div>
+                                <div class="ev-cd-sep">:</div>
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd2-m">--</span><span class="ev-cd-label">Mins</span></div>
+                                <div class="ev-cd-sep">:</div>
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd2-s">--</span><span class="ev-cd-label">Secs</span></div>
+                            </div>
+                        </div>
+                        <div class="ev-full-actions">
+                            <a href="index.html#join" class="btn-saffron">Register Now →</a>
+                            <button class="btn-ghost-sm" onclick="downloadICS('Policy Drafting Challenge', 'Research and draft a real national policy brief judged by academics.', 'NIT Patna CSE Department', '2026-05-02T09:00:00', '2026-05-02T16:00:00')">📅 Add to Calendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Leadership Workshop -->
+                <article class="ev-full-card event-item" data-status="upcoming">
+                    <div class="ev-full-image-wrap">
+                        <div class="calendar-badge">
+                            <span class="month">MAY</span>
+                            <span class="day">20</span>
+                        </div>
+                        <img src="ev-leadership.png" alt="Leadership Workshop" class="ev-full-img" loading="lazy">
+                        <div class="ev-full-img-overlay"></div>
+                        <span class="ev-status-badge ev-badge-upcoming">UPCOMING</span>
+                        <div class="ev-full-date-chip">May 20, 2026</div>
+                    </div>
+                    <div class="ev-full-body">
+                        <div class="ev-full-meta">
+                            <span class="ev-tag ev-tag-s">Workshop</span>
+                            <span class="ev-meta-sep">·</span>
+                            <span class="ev-meta-venue">📍 NIT Patna, Open Amphitheatre</span>
+                        </div>
+                        <h3 class="ev-full-title">Leadership for India Seminar</h3>
+                        <p class="ev-full-desc">An immersive full-day leadership seminar featuring expert guest lecturers, interactive case studies, and a practical policy simulation exercise. Designed to build future-ready leaders who understand both governance and ground reality.</p>
+                        <div class="ev-full-info-row">
+                            <div class="ev-info-item"><span class="ev-info-icon">📅</span><span>May 20, 2026 · 8:30 AM – 6:00 PM</span></div>
+                            <div class="ev-info-item"><span class="ev-info-icon">👥</span><span>Individual registration</span></div>
+                            <div class="ev-info-item"><span class="ev-info-icon">🏆</span><span>Certificate of Excellence</span></div>
+                        </div>
+                        <div class="ev-countdown-wrap">
+                            <div class="ev-countdown-label">Starts in</div>
+                            <div class="ev-countdown" data-target="2026-05-20T08:30:00">
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd3-d">--</span><span class="ev-cd-label">Days</span></div>
+                                <div class="ev-cd-sep">:</div>
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd3-h">--</span><span class="ev-cd-label">Hours</span></div>
+                                <div class="ev-cd-sep">:</div>
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd3-m">--</span><span class="ev-cd-label">Mins</span></div>
+                                <div class="ev-cd-sep">:</div>
+                                <div class="ev-cd-unit"><span class="ev-cd-num" id="cd3-s">--</span><span class="ev-cd-label">Secs</span></div>
+                            </div>
+                        </div>
+                        <div class="ev-full-actions">
+                            <a href="index.html#join" class="btn-saffron">Register Now →</a>
+                            <button class="btn-ghost-sm" onclick="downloadICS('Leadership for India Seminar', 'Full-day seminar featuring guest lecturers, case studies, and policy simulation.', 'NIT Patna Open Amphitheatre', '2026-05-20T08:30:00', '2026-05-20T18:00:00')">📅 Add to Calendar</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PAST EVENTS ─── -->
+    <section class="section-pad" id="past-events">
+        <div class="container">
+            <div class="sec-label reveal">Our History</div>
+            <h2 class="sec-title reveal rd1">Past <span class="accent">Events</span></h2>
+
+            <div class="events-past-grid" id="pastGrid">
+
+                <article class="ev-past-card event-item" data-status="past">
+                    <div class="ev-past-img-wrap">
+                        <img src="ev-community.png" alt="Community Outreach Drive" class="ev-past-img" loading="lazy">
+                        <span class="ev-status-badge ev-badge-past">CONCLUDED</span>
+                    </div>
+                    <div class="ev-past-body">
+                        <div class="ev-full-meta">
+                            <span class="ev-tag ev-tag-g">Community</span>
+                            <span class="ev-meta-sep">·</span>
+                            <span class="ev-meta-venue">Feb 2026</span>
+                        </div>
+                        <h3 class="ev-past-title">Rural Outreach Drive — Bihta</h3>
+                        <p>NIT Patna students partnered with the local panchayat in Bihta to run health awareness and digital literacy sessions for 200+ residents. A landmark Think India community initiative.</p>
+                    </div>
+                </article>
+
+                <article class="ev-past-card event-item" data-status="past">
+                    <div class="ev-past-img-wrap">
+                        <img src="ev-debate.png" alt="Debate Workshop 2025" class="ev-past-img" loading="lazy">
+                        <span class="ev-status-badge ev-badge-past">CONCLUDED</span>
+                    </div>
+                    <div class="ev-past-body">
+                        <div class="ev-full-meta">
+                            <span class="ev-tag ev-tag-b">Debate</span>
+                            <span class="ev-meta-sep">·</span>
+                            <span class="ev-meta-venue">Jan 2026</span>
+                        </div>
+                        <h3 class="ev-past-title">Inter-Batch Debate — Round 1</h3>
+                        <p>The first intra-college debate of the year, featuring 12 teams and lively motions on education reform and economic policy. A crowd of 300+ watched the finals.</p>
+                    </div>
+                </article>
+
+                <article class="ev-past-card event-item" data-status="past">
+                    <div class="ev-past-img-wrap">
+                        <img src="ev-policy.png" alt="Policy Workshop 2025" class="ev-past-img" loading="lazy">
+                        <span class="ev-status-badge ev-badge-past">CONCLUDED</span>
+                    </div>
+                    <div class="ev-past-body">
+                        <div class="ev-full-meta">
+                            <span class="ev-tag ev-tag-s">Policy</span>
+                            <span class="ev-meta-sep">·</span>
+                            <span class="ev-meta-venue">Dec 2025</span>
+                        </div>
+                        <h3 class="ev-past-title">Policy Research Bootcamp 2025</h3>
+                        <p>A weekend-long deep dive into policy research methodologies — attended by 40+ members from NIT Patna across all departments. Three outstanding research papers were submitted nationally.</p>
+                    </div>
+                </article>
+
+                <article class="ev-past-card event-item" data-status="past">
+                    <div class="ev-past-img-wrap">
+                        <img src="ev-leadership.png" alt="Chapter Inauguration" class="ev-past-img" loading="lazy">
+                        <span class="ev-status-badge ev-badge-past">CONCLUDED</span>
+                    </div>
+                    <div class="ev-past-body">
+                        <div class="ev-full-meta">
+                            <span class="ev-tag ev-tag-g">Milestone</span>
+                            <span class="ev-meta-sep">·</span>
+                            <span class="ev-meta-venue">Oct 2023</span>
+                        </div>
+                        <h3 class="ev-past-title">Chapter Inauguration Ceremony</h3>
+                        <p>The historic launch of Think India's NIT Patna chapter — attended by faculty, national Think India representatives, and founding members. The beginning of a movement.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="ev-cta-banner">
+        <div class="container">
+            <div class="ev-cta-inner">
+                <div class="ev-cta-text">
+                    <div class="sec-label">Be Part of It</div>
+                    <h2 class="ev-cta-heading">Don't just watch history.<br><span class="saffron-word">Make it.</span></h2>
+                    <p>Join Think India NIT Patna to participate in all upcoming events, competitions, and community initiatives. Be the change India needs.</p>
+                </div>
+                <div class="ev-cta-actions">
+                    <a href="index.html#join" class="btn-saffron">Join Think India →</a>
+                    <a href="index.html#contact" class="btn-ghost">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-tricolour"><div></div><div></div><div></div></div>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-title">Think India</div>
+                    <span class="footer-brand-sub">NIT Patna Chapter</span>
+                    <p>A forum of thinkers, innovators, and leaders committed to building a stronger, more equitable India — one idea at a time. Nation First. Always.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="f-social">in</a>
+                        <a href="#" class="f-social">ig</a>
+                        <a href="#" class="f-social">yt</a>
+                        <a href="#" class="f-social">tw</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#vision">Vision &amp; Mission</a>
+                    <a href="index.html#activities">Activities</a>
+                    <a href="events.html">Events</a>
+                    <a href="index.html#team">Our Team</a>
+                    <a href="index.html#blog">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <a href="index.html#join">Join Think India</a>
+                    <a href="index.html#initiatives">Initiatives</a>
+                    <a href="index.html#gallery">Gallery</a>
+                    <a href="index.html#contact">Contact Us</a>
+                    <a href="#">Think India National</a>
+                    <a href="#">Alumni Network</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 <span class="hl">Think India NIT Patna</span>. All rights reserved. Part of the Think India National Network. &nbsp;|&nbsp; <span class="hl">जय हिन्द</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING CTA (FAB) -->
+    <div class="floating-cta" id="floatingCta">
+        <a href="contact.html">
+            <span class="cta-icon">🇮🇳</span>
+            <span class="cta-text">Join Chapter</span>
+        </a>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="events.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think India — NIT Patna</title>
+    <meta name="description" content="Think India NIT Patna — A forum of thinkers, innovators, and leaders empowering youth to build a stronger India. Join the movement.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- TRICOLOUR BAR -->
+    <div class="tricolour-bar">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="scroll-progress" id="scrollProg"></div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg class="nav-logo-chakra" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="46" stroke="#FF9933" stroke-width="1.5" />
+                <circle cx="50" cy="50" r="5" fill="#000080" />
+                <circle cx="50" cy="50" r="2" fill="#FF9933" />
+                <g stroke="#000080" stroke-width="1">
+                    <line x1="50" y1="4" x2="50" y2="45" />
+                    <line x1="69.1" y1="9.3" x2="54.8" y2="47.5" />
+                    <line x1="84.7" y1="22.3" x2="56.1" y2="52.3" />
+                    <line x1="93.3" y1="40.8" x2="55.5" y2="52.1" />
+                    <line x1="93.3" y1="59.2" x2="55.5" y2="47.9" />
+                    <line x1="84.7" y1="77.7" x2="56.1" y2="47.7" />
+                    <line x1="69.1" y1="90.7" x2="54.8" y2="52.5" />
+                    <line x1="50" y1="96" x2="50" y2="55" />
+                    <line x1="30.9" y1="90.7" x2="45.2" y2="52.5" />
+                    <line x1="15.3" y1="77.7" x2="43.9" y2="47.7" />
+                    <line x1="6.7" y1="59.2" x2="44.5" y2="47.9" />
+                    <line x1="6.7" y1="40.8" x2="44.5" y2="52.1" />
+                    <line x1="15.3" y1="22.3" x2="43.9" y2="52.3" />
+                    <line x1="30.9" y1="9.3" x2="45.2" y2="47.5" />
+                    <line x1="59.5" y1="5.5" x2="51.6" y2="45.2" />
+                    <line x1="78.5" y1="15" x2="55.2" y2="49.5" />
+                    <line x1="91.5" y1="31.8" x2="54.8" y2="51.4" />
+                    <line x1="96.5" y1="50" x2="55" y2="50" />
+                    <line x1="91.5" y1="68.2" x2="54.8" y2="48.6" />
+                    <line x1="78.5" y1="85" x2="55.2" y2="50.5" />
+                    <line x1="59.5" y1="94.5" x2="51.6" y2="54.8" />
+                    <line x1="40.5" y1="94.5" x2="48.4" y2="54.8" />
+                    <line x1="21.5" y1="85" x2="44.8" y2="50.5" />
+                    <line x1="8.5" y1="68.2" x2="45.2" y2="48.6" />
+                </g>
+            </svg>
+            <div class="nav-logo-text">
+                <span class="main">Think India</span>
+                <span class="sub">NIT Patna</span>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#vision">Vision</a></li>
+            <li><a href="index.html#activities">Activities</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="nav-cta-li"><a href="contact.html" class="nav-cta">Join Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html" onclick="closeMenu()">About</a>
+        <a href="index.html#vision" onclick="closeMenu()">Vision</a>
+        <a href="index.html#activities" onclick="closeMenu()">Activities</a>
+        <a href="events.html" onclick="closeMenu()">Events</a>
+        <a href="team.html" onclick="closeMenu()">Team</a>
+        <a href="gallery.html" onclick="closeMenu()">Gallery</a>
+        <a href="blog.html" onclick="closeMenu()">Blog</a>
+        <a href="contact.html" class="cta-mob" onclick="closeMenu()">Join Us →</a>
+    </div>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+        <div class="hero-bg-image"></div>
+        <div class="hero-gradient-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+
+        <div class="hero-content">
+            <div class="hero-text-panel">
+                <div class="hero-flag-badge">
+                    <div class="flag-mini">
+                        <div></div>
+                        <div>
+                            <div class="dot"></div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <span>Est. 2023 · NIT Patna Chapter · Nation First</span>
+                </div>
+
+                <div class="hero-devanagari">भारत माता की जय</div>
+
+                <h1 class="hero-headline">
+                    Empowering<br>
+                    <span class="saffron-word">Youth</span> to Build<br>
+                    a <span class="outline-word">Stronger</span><br>
+                    <span class="green-word">India.</span>
+                </h1>
+
+                <p class="hero-sub">Think India NIT Patna — A forum of thinkers, innovators, and leaders who believe that
+                    India's best chapter is yet to be written, and that we will write it.</p>
+
+                <div class="hero-btns">
+                    <a href="contact.html" class="btn-saffron">Join the Movement →</a>
+                    <a href="about.html" class="btn-ghost">Our Story</a>
+                </div>
+
+                <div class="hero-tricolour-stats">
+                    <div class="h-stat">
+                        <span class="h-stat-num" data-count="2006">0</span>
+                        <span class="h-stat-label">Founded</span>
+                    </div>
+                    <div class="h-stat">
+                        <span class="h-stat-num" data-count="150">0</span>
+                        <span class="h-stat-label">Institutes</span>
+                    </div>
+                    <div class="h-stat">
+                        <span class="h-stat-num" data-count="50">0</span>
+                        <span class="h-stat-label">Members</span>
+                    </div>
+                    <div class="h-stat">
+                        <span class="h-stat-num">∞</span>
+                        <span class="h-stat-label">Ideas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator" id="heroScroll">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-strip">
+        <div class="marquee-track">
+            <span class="marquee-item">Nation First</span>
+            <span class="marquee-item">Jai Hind</span>
+            <span class="marquee-item">Youth Leadership</span>
+            <span class="marquee-item">Policy for India</span>
+            <span class="marquee-item">Think India</span>
+            <span class="marquee-item">NIT Patna</span>
+            <span class="marquee-item">Ideas that Build Nations</span>
+            <span class="marquee-item">Ekta · Sewa · Rashtra</span>
+            <span class="marquee-item">Nation First</span>
+            <span class="marquee-item">Jai Hind</span>
+            <span class="marquee-item">Youth Leadership</span>
+            <span class="marquee-item">Policy for India</span>
+            <span class="marquee-item">Think India</span>
+            <span class="marquee-item">NIT Patna</span>
+            <span class="marquee-item">Ideas that Build Nations</span>
+            <span class="marquee-item">Ekta · Sewa · Rashtra</span>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">Our Story</div>
+            <h2 class="sec-title reveal rd1">Two Scales.<br>One <span class="accent">Nation.</span></h2>
+            <div class="tri-divider reveal rd2">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="about-layout" style="margin-top:3rem">
+                <div class="about-image-side reveal rd1">
+                    <img src="about-section.png" alt="Think India NIT Patna students collaborating" class="about-hero-img" loading="lazy">
+                    <div class="about-img-caption">Students engaged in a policy research session at NIT Patna</div>
+                </div>
+                <div class="about-text-side">
+                    <div class="reveal rd1">
+                        <div class="about-num">01</div>
+                        <h3 class="about-card-title">Think India — The National Movement</h3>
+                        <p class="about-body">Born in 2006 in the corridors of IISc and IIM Bangalore, Think India emerged
+                            from a simple, powerful conviction: India's students must not be passive observers of their
+                            nation's story. They must be its authors.</p>
+                        <div class="about-quote">"The youth of India are not a statistic. They are the strategy."</div>
+                        <p class="about-body">Today, Think India is present across 150+ premier universities — IITs, NITs,
+                            IIMs, central universities — building India's most robust network of intellectually engaged,
+                            nationally conscious young citizens.</p>
+                    </div>
+                    <div class="reveal rd3">
+                        <div class="about-num">02</div>
+                        <h3 class="about-card-title">Think India — NIT Patna Chapter</h3>
+                        <p class="about-body">Founded in 2023 on the banks of the Ganga in the historic heartland of Bihar,
+                            the NIT Patna chapter carries forward a legacy of intellectual courage.</p>
+                        <div class="about-quote">"We don't just study India's problems. We train ourselves to solve them."</div>
+                    </div>
+                    <a href="about.html" class="btn-saffron" style="margin-top:1.5rem">Read Our Full Story →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION -->
+    <section id="vision" class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">What Drives Us</div>
+            <h2 class="sec-title reveal rd1">Mission. Vision.<br><span class="accent">Values.</span></h2>
+            <div class="vision-trio">
+                <div class="vision-panel reveal rd1">
+                    <div class="vp-top-bar vp-saffron"></div>
+                    <span class="vp-icon">🎯</span>
+                    <h3>Mission</h3>
+                    <p>To inspire India's youth to think critically about national issues, engage in constructive
+                        dialogue, and develop actionable solutions that contribute to India's development and the
+                        welfare of her 1.4 billion citizens.</p>
+                </div>
+                <div class="vision-panel reveal rd2">
+                    <div class="vp-top-bar vp-white"></div>
+                    <span class="vp-icon">🔭</span>
+                    <h3>Vision</h3>
+                    <p>To build a generation of young leaders rooted in Indian values, global in outlook, and driven by
+                        the desire to serve — the architects of India's century, forged in classrooms and debating
+                        halls.</p>
+                </div>
+                <div class="vision-panel reveal rd3">
+                    <div class="vp-top-bar vp-green"></div>
+                    <span class="vp-icon">🇮🇳</span>
+                    <h3>Values</h3>
+                    <p>Nation First. Every decision, discussion, and initiative at Think India is guided by a single
+                        north star: what is best for India. Ekta. Sewa. Rashtra — Unity, Service, Nation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities" class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">What We Do</div>
+            <h2 class="sec-title reveal rd1">Our Core <span class="accent">Activities</span></h2>
+            <div class="act-grid">
+                <div class="act-card reveal rd1">
+                    <span class="act-emoji">💡</span>
+                    <h3>Ideathons</h3>
+                    <p>Collaborative problem-solving events where teams develop innovative solutions to India's most
+                        pressing civic and developmental challenges — from water scarcity to digital inclusion.</p>
+                </div>
+                <div class="act-card reveal rd2">
+                    <span class="act-emoji">📜</span>
+                    <h3>Policy Drafting</h3>
+                    <p>Students research, debate, and draft real policy proposals on education reform, agricultural
+                        transformation, and digital governance — reviewed by faculty mentors and submitted nationally.
+                    </p>
+                </div>
+                <div class="act-card reveal rd3">
+                    <span class="act-emoji">🤝</span>
+                    <h3>Social Initiatives</h3>
+                    <p>Ground-level work connecting NIT Patna students with surrounding communities — awareness
+                        campaigns, rural literacy drives, and local development programs rooted in Seva.</p>
+                </div>
+                <div class="act-card reveal rd2">
+                    <span class="act-emoji">🎯</span>
+                    <h3>Leadership Workshops</h3>
+                    <p>Expert-led sessions on public speaking, critical thinking, organizational strategy, and civic
+                        leadership — equipping tomorrow's changemakers with today's tools.</p>
+                </div>
+                <div class="act-card reveal rd3">
+                    <span class="act-emoji">🎭</span>
+                    <h3>Cultural Discussions</h3>
+                    <p>Rich conversations exploring India's heritage, diversity, and identity — bridging tradition and
+                        modernity through structured, respectful dialogue that celebrates India's pluralism.</p>
+                </div>
+                <div class="act-card reveal rd4">
+                    <span class="act-emoji">🌱</span>
+                    <h3>Community Service</h3>
+                    <p>Regular outreach serving communities near NIT Patna — because in Think India's philosophy,
+                        leadership without service is incomplete. Sewa is not optional; it is the foundation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS TEASER -->
+    <section id="events" class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">Events &amp; Competitions</div>
+            <div class="events-teaser-header reveal rd1">
+                <h2 class="sec-title">What's <span class="accent">Happening</span></h2>
+                <a href="events.html" class="ev-view-all-btn">View All Events →</a>
+            </div>
+
+            <!-- LIVE ALERT -->
+            <div class="ev-live-alert reveal rd2">
+                <div class="ev-live-alert-dot"></div>
+                <span><strong>Youth Jam 2026</strong> is happening right now — March 17–18, 2026 at NIT Patna</span>
+                <a href="events.html" class="ev-live-alert-link">See Details →</a>
+            </div>
+
+            <div class="events-teaser-grid">
+                <div class="ev-teaser-card ev-teaser-live reveal rd1">
+                    <div class="ev-teaser-img-wrap">
+                        <img src="ev-youth-jam.png" alt="Youth Jam 2026" class="ev-teaser-img" loading="lazy">
+                        <div class="ev-teaser-overlay"></div>
+                        <span class="ev-teaser-badge ev-tbadge-live"><span class="live-pulse"></span> LIVE NOW</span>
+                    </div>
+                    <div class="ev-teaser-body">
+                        <div class="ev-teaser-date">Mar 17–18, 2026</div>
+                        <h3>Youth Jam 2026</h3>
+                        <p>Two days of ideation, keynote talks, and collaborative problem-solving on India's defining
+                            challenges.</p>
+                        <a href="events.html" class="ev-reg">View Details →</a>
+                    </div>
+                </div>
+                <div class="ev-teaser-card reveal rd2">
+                    <div class="ev-teaser-img-wrap">
+                        <img src="ev-debate.png" alt="National Debate" class="ev-teaser-img" loading="lazy">
+                        <div class="ev-teaser-overlay"></div>
+                        <span class="ev-teaser-badge ev-tbadge-upcoming">UPCOMING</span>
+                    </div>
+                    <div class="ev-teaser-body">
+                        <div class="ev-teaser-date">Apr 5, 2026</div>
+                        <h3>National Debate Championship</h3>
+                        <p>Inter-college debate on policy, governance &amp; social reform — India's sharpest student
+                            minds.</p>
+                        <a href="events.html" class="ev-reg">Register Now →</a>
+                    </div>
+                </div>
+                <div class="ev-teaser-card reveal rd3">
+                    <div class="ev-teaser-img-wrap">
+                        <img src="ev-policy.png" alt="Policy Challenge" class="ev-teaser-img" loading="lazy">
+                        <div class="ev-teaser-overlay"></div>
+                        <span class="ev-teaser-badge ev-tbadge-upcoming">UPCOMING</span>
+                    </div>
+                    <div class="ev-teaser-body">
+                        <div class="ev-teaser-date">May 2, 2026</div>
+                        <h3>Policy Drafting Challenge</h3>
+                        <p>Teams draft a real policy brief judged by academics — best briefs go to Think India
+                            nationals.</p>
+                        <a href="events.html" class="ev-reg">Register Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-teaser-cta-row reveal">
+                <a href="events.html" class="btn-saffron">Explore All Events &amp; Register →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM TEASER -->
+    <section id="team" class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">The People</div>
+            <h2 class="sec-title reveal rd1">Our <span class="accent">Team</span></h2>
+
+            <div class="team-section-label reveal">Faculty Advisor</div>
+            <div class="team-grid">
+                <div class="team-card reveal rd1">
+                    <div class="t-avatar av-s">FA</div>
+                    <h4>Prof. [Name]</h4>
+                    <p class="role">Faculty Advisor</p>
+                    <a href="#" class="t-link">in</a>
+                </div>
+            </div>
+
+            <div class="team-section-label reveal">Convener</div>
+            <div class="team-grid">
+                <div class="team-card reveal rd1">
+                    <div class="t-avatar av-w">CV</div>
+                    <h4>[Convener Name]</h4>
+                    <p class="role">Convener</p>
+                    <a href="#" class="t-link">in</a>
+                </div>
+            </div>
+
+            <div class="team-section-label reveal">Co-Conveners</div>
+            <div class="team-grid">
+                <div class="team-card reveal rd1">
+                    <div class="t-avatar av-g">CC</div>
+                    <h4>[Co-Convener]</h4>
+                    <p class="role">Co-Convener</p>
+                    <a href="#" class="t-link">in</a>
+                </div>
+                <div class="team-card reveal rd2">
+                    <div class="t-avatar av-b">CC</div>
+                    <h4>[Co-Convener]</h4>
+                    <p class="role">Co-Convener</p>
+                    <a href="#" class="t-link">in</a>
+                </div>
+            </div>
+
+            <div class="team-section-label reveal">Core Team</div>
+            <div class="team-grid">
+                <div class="team-card reveal rd1">
+                    <div class="t-avatar av-s">PH</div>
+                    <h4>[Member Name]</h4>
+                    <p class="role">Policy Head</p><a href="#" class="t-link">in</a>
+                </div>
+                <div class="team-card reveal rd2">
+                    <div class="t-avatar av-g">EH</div>
+                    <h4>[Member Name]</h4>
+                    <p class="role">Events Head</p><a href="#" class="t-link">in</a>
+                </div>
+                <div class="team-card reveal rd3">
+                    <div class="t-avatar av-b">OH</div>
+                    <h4>[Member Name]</h4>
+                    <p class="role">Outreach Head</p><a href="#" class="t-link">in</a>
+                </div>
+                <div class="team-card reveal rd4">
+                    <div class="t-avatar av-w">CH</div>
+                    <h4>[Member Name]</h4>
+                    <p class="role">Creative Head</p><a href="#" class="t-link">in</a>
+                </div>
+            </div>
+
+            <div class="section-cta-row reveal">
+                <a href="team.html" class="btn-ghost">View Full Team →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INITIATIVES -->
+    <section id="initiatives" class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">Long-Term Work</div>
+            <h2 class="sec-title reveal rd1">Flagship <span class="accent">Initiatives</span></h2>
+            <div class="init-layout">
+                <div class="init-card ic-saffron reveal rd1">
+                    <div class="init-num">01</div>
+                    <h3>Policy Research Cell</h3>
+                    <p>A dedicated cell producing policy briefs on education, agriculture, infrastructure, and digital
+                        governance — submitted to Think India's national convention and made available as open public
+                        research.</p>
+                </div>
+                <div class="init-card ic-white reveal rd2">
+                    <div class="init-num">02</div>
+                    <h3>Rural Development Ideas</h3>
+                    <p>Collaborative programs connecting NIT Patna's engineers with nearby rural communities to
+                        co-design practical, technology-enabled solutions to ground-level challenges in Bihar and
+                        beyond.</p>
+                </div>
+                <div class="init-card ic-green reveal rd3">
+                    <div class="init-num">03</div>
+                    <h3>Cultural Awareness Campaigns</h3>
+                    <p>Celebrating India's pluralism — our cultural campaigns explore regional heritage, art forms, and
+                        histories, fostering a sense of unified national identity rooted in respect for every tradition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY TEASER -->
+    <section id="gallery" class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">Moments</div>
+            <h2 class="sec-title reveal rd1">Our <span class="accent">Gallery</span></h2>
+            <div class="gallery-grid">
+                <div class="g-item reveal rd1">
+                    <img src="gallery_1.png" alt="Youth Jam 2025 — Keynote Session" class="g-img" loading="lazy">
+                    <div class="g-overlay"><span class="g-caption">Youth Jam 2025 — Keynote Session</span></div>
+                </div>
+                <div class="g-item reveal rd2">
+                    <img src="gallery_2.png" alt="Policy Drafting Workshop" class="g-img" loading="lazy">
+                    <div class="g-overlay"><span class="g-caption">Policy Drafting Workshop</span></div>
+                </div>
+                <div class="g-item reveal rd3">
+                    <img src="gallery_3.png" alt="Community Outreach Drive" class="g-img" loading="lazy">
+                    <div class="g-overlay"><span class="g-caption">Community Outreach Drive</span></div>
+                </div>
+                <div class="g-item reveal rd2">
+                    <img src="gallery_4.png" alt="Chapter Inauguration 2023" class="g-img" loading="lazy">
+                    <div class="g-overlay"><span class="g-caption">Chapter Inauguration 2023</span></div>
+                </div>
+                <div class="g-item reveal rd3">
+                    <img src="gallery_5.png" alt="National Debate Finals" class="g-img" loading="lazy">
+                    <div class="g-overlay"><span class="g-caption">National Debate Finals</span></div>
+                </div>
+                <div class="g-item reveal rd4">
+                    <img src="gallery_6.png" alt="Cultural Heritage Session" class="g-img" loading="lazy">
+                    <div class="g-overlay"><span class="g-caption">Cultural Heritage Session</span></div>
+                </div>
+            </div>
+            <div class="section-cta-row reveal" style="margin-top:2.5rem">
+                <a href="gallery.html" class="btn-ghost">View Full Gallery →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG TEASER -->
+    <section id="blog" class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">Ideas &amp; Perspectives</div>
+            <h2 class="sec-title reveal rd1">From Our <span class="accent">Members</span></h2>
+            <div class="blog-grid">
+                <div class="blog-card reveal rd1">
+                    <div class="blog-thumb">
+                        <img src="blog-policy.png" alt="NEP 2020 Analysis" loading="lazy">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag bt-s">Policy</span>
+                        <h3>India's NEP 2020: A Decade of Implementation Challenges</h3>
+                        <p class="blog-excerpt">Three years after rollout, what has actually changed in classrooms? A
+                            critical assessment of the National Education Policy's ground-level impact across Bihar and UP.</p>
+                        <div class="blog-foot"><span>Ankit Raj · Jan 2025</span><a href="blog.html" class="blog-read">Read →</a></div>
+                    </div>
+                </div>
+                <div class="blog-card reveal rd2">
+                    <div class="blog-thumb">
+                        <img src="blog-leadership.png" alt="Student Leadership" loading="lazy">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag bt-b">Leadership</span>
+                        <h3>What Student Leaders Get Wrong About 'Nation First'</h3>
+                        <p class="blog-excerpt">Nationalism without nuance is noise. The leadership India needs isn't
+                            performative patriotism — it's quiet, disciplined, long-term commitment to institutions.</p>
+                        <div class="blog-foot"><span>Priya Singh · Feb 2025</span><a href="blog.html" class="blog-read">Read →</a></div>
+                    </div>
+                </div>
+                <div class="blog-card reveal rd3">
+                    <div class="blog-thumb">
+                        <img src="blog-culture.png" alt="Ganga and NIT Patna" loading="lazy">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag bt-g">Culture</span>
+                        <h3>The River and the Engineer: Ganga, Identity, and NIT Patna</h3>
+                        <p class="blog-excerpt">Sitting on the banks of the Ganga, our campus has a geographic identity few
+                            institutions can claim. What does that mean for development and heritage?</p>
+                        <div class="blog-foot"><span>Rohan Das · Mar 2025</span><a href="blog.html" class="blog-read">Read →</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta-row reveal" style="margin-top:2.5rem">
+                <a href="blog.html" class="btn-ghost">Read All Articles →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join" class="section-pad">
+        <div class="container">
+            <div class="join-grid">
+                <div class="reveal">
+                    <div class="sec-label">Become a Member</div>
+                    <h2 class="sec-title">Join the Community<br>of <span class="accent">Nation Builders</span></h2>
+                    <div class="tri-divider" style="margin:1.5rem 0">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p class="join-left" style="font-size:0.9rem;line-height:1.85;color:rgba(254,247,237,0.6)">Think
+                        India NIT Patna isn't just a club — it's a commitment. When you join, you become part of a
+                        nationwide network of students who believe that ideas, when nurtured and argued, become the
+                        architecture of a better nation.</p>
+                    <div style="margin-top:1.8rem">
+                        <div class="join-benefit"><span class="jb-icon">🏛️</span><span>Access to Think India's national
+                                conventions and events across India</span></div>
+                        <div class="join-benefit"><span class="jb-icon">🎓</span><span>Mentorship from alumni at IITs,
+                                IIMs, UPSC and leading organisations</span></div>
+                        <div class="join-benefit"><span class="jb-icon">📰</span><span>Publish your articles and policy
+                                briefs on Think India's national platform</span></div>
+                        <div class="join-benefit"><span class="jb-icon">🏅</span><span>Certificate of membership from
+                                Think India's national body</span></div>
+                        <div class="join-benefit"><span class="jb-icon">🌍</span><span>Real experience in leadership,
+                                policy research, and social impact</span></div>
+                    </div>
+                </div>
+                <form class="join-form reveal rd2" onsubmit="return false;">
+                    <div class="sec-label" style="margin-bottom:1.2rem">Application Form</div>
+                    <div class="form-row">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-row">
+                        <label>Department</label>
+                        <input type="text" placeholder="e.g. Computer Science & Engineering" required>
+                    </div>
+                    <div class="form-row">
+                        <label>Year of Study</label>
+                        <select required>
+                            <option value="">Select Year</option>
+                            <option>1st Year</option>
+                            <option>2nd Year</option>
+                            <option>3rd Year</option>
+                            <option>4th Year</option>
+                            <option>M.Tech / 5th Year</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label>Areas of Interest</label>
+                        <div class="cb-grid">
+                            <label class="cb-label"><input type="checkbox"> Policy</label>
+                            <label class="cb-label"><input type="checkbox"> Leadership</label>
+                            <label class="cb-label"><input type="checkbox"> Culture</label>
+                            <label class="cb-label"><input type="checkbox"> Research</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label>Key Skills</label>
+                        <input type="text" placeholder="e.g. Writing, Public Speaking, Research" required>
+                    </div>
+                    <div class="form-row">
+                        <label>Why do you want to join Think India?</label>
+                        <textarea
+                            placeholder="Tell us what draws you to Think India and what you hope to contribute to the nation..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit-form" id="joinSubmit">Submit Application →</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT TEASER -->
+    <section id="contact" class="section-pad">
+        <div class="container">
+            <div class="contact-center">
+                <div class="sec-label reveal" style="justify-content:center">Get In Touch</div>
+                <h2 class="sec-title reveal rd1" style="text-align:center">Contact <span class="accent">Us</span></h2>
+                <div class="contact-items reveal rd2">
+                    <a href="mailto:thinkindia@nitp.ac.in" class="c-item">
+                        <div class="c-icon">✉️</div>
+                        <span>thinkindia@nitp.ac.in</span>
+                    </a>
+                    <a href="#" class="c-item">
+                        <div class="c-icon">📸</div>
+                        <span>@thinkindia_nitp</span>
+                    </a>
+                    <a href="#" class="c-item">
+                        <div class="c-icon">💼</div>
+                        <span>LinkedIn</span>
+                    </a>
+                    <div class="c-item">
+                        <div class="c-icon">📍</div>
+                        <span>NIT Patna, Bihar</span>
+                    </div>
+                </div>
+                <div class="section-cta-row reveal rd3">
+                    <a href="contact.html" class="btn-saffron">Visit Contact Page →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-tricolour">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-title">Think India</div>
+                    <span class="footer-brand-sub">NIT Patna Chapter</span>
+                    <p>A forum of thinkers, innovators, and leaders committed to building a stronger, more equitable
+                        India — one idea at a time. Nation First. Always.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="f-social">in</a>
+                        <a href="#" class="f-social">ig</a>
+                        <a href="#" class="f-social">yt</a>
+                        <a href="#" class="f-social">tw</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <a href="about.html">About</a>
+                    <a href="index.html#vision">Vision & Mission</a>
+                    <a href="index.html#activities">Activities</a>
+                    <a href="events.html">Events</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <a href="contact.html">Join Think India</a>
+                    <a href="index.html#initiatives">Initiatives</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Think India National</a>
+                    <a href="#">Alumni Network</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 <span class="hl">Think India NIT Patna</span>. All rights reserved. Part of the Think India
+                National Network. &nbsp;|&nbsp; <span class="hl">जय हिन्द</span>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FLOATING CTA (FAB) -->
+    <div class="floating-cta" id="floatingCta">
+        <a href="contact.html">
+            <span class="cta-icon">🇮🇳</span>
+            <span class="cta-text">Join Chapter</span>
+        </a>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

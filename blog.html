@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Think India NIT Patna</title>
+    <meta name="description" content="Ideas, perspectives, and policy analysis from Think India NIT Patna members — covering leadership, culture, and governance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    
+    <div class="tricolour-bar"><div></div><div></div><div></div></div>
+    <div class="scroll-progress" id="scrollProg"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg class="nav-logo-chakra" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="46" stroke="#FF9933" stroke-width="1.5" />
+                <circle cx="50" cy="50" r="5" fill="#000080" /><circle cx="50" cy="50" r="2" fill="#FF9933" />
+                <g stroke="#000080" stroke-width="1">
+                    <line x1="50" y1="4" x2="50" y2="45" /><line x1="69.1" y1="9.3" x2="54.8" y2="47.5" />
+                    <line x1="84.7" y1="22.3" x2="56.1" y2="52.3" /><line x1="93.3" y1="40.8" x2="55.5" y2="52.1" />
+                    <line x1="93.3" y1="59.2" x2="55.5" y2="47.9" /><line x1="84.7" y1="77.7" x2="56.1" y2="47.7" />
+                    <line x1="69.1" y1="90.7" x2="54.8" y2="52.5" /><line x1="50" y1="96" x2="50" y2="55" />
+                    <line x1="30.9" y1="90.7" x2="45.2" y2="52.5" /><line x1="15.3" y1="77.7" x2="43.9" y2="47.7" />
+                    <line x1="6.7" y1="59.2" x2="44.5" y2="47.9" /><line x1="6.7" y1="40.8" x2="44.5" y2="52.1" />
+                    <line x1="15.3" y1="22.3" x2="43.9" y2="52.3" /><line x1="30.9" y1="9.3" x2="45.2" y2="47.5" />
+                    <line x1="59.5" y1="5.5" x2="51.6" y2="45.2" /><line x1="78.5" y1="15" x2="55.2" y2="49.5" />
+                    <line x1="91.5" y1="31.8" x2="54.8" y2="51.4" /><line x1="96.5" y1="50" x2="55" y2="50" />
+                    <line x1="91.5" y1="68.2" x2="54.8" y2="48.6" /><line x1="78.5" y1="85" x2="55.2" y2="50.5" />
+                    <line x1="59.5" y1="94.5" x2="51.6" y2="54.8" /><line x1="40.5" y1="94.5" x2="48.4" y2="54.8" />
+                    <line x1="21.5" y1="85" x2="44.8" y2="50.5" /><line x1="8.5" y1="68.2" x2="45.2" y2="48.6" />
+                </g>
+            </svg>
+            <div class="nav-logo-text"><span class="main">Think India</span><span class="sub">NIT Patna</span></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#vision">Vision</a></li>
+            <li><a href="index.html#activities">Activities</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li class="nav-cta-li"><a href="contact.html" class="nav-cta">Join Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html" onclick="closeMenu()">About</a>
+        <a href="events.html" onclick="closeMenu()">Events</a>
+        <a href="team.html" onclick="closeMenu()">Team</a>
+        <a href="gallery.html" onclick="closeMenu()">Gallery</a>
+        <a href="blog.html" onclick="closeMenu()">Blog</a>
+        <a href="contact.html" class="cta-mob" onclick="closeMenu()">Join Us →</a>
+    </div>
+
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('blog-policy.png')"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <div class="hero-flag-badge">
+                <div class="flag-mini"><div></div><div><div class="dot"></div></div><div></div></div>
+                <span>Ideas &amp; Perspectives</span>
+            </div>
+            <h1 class="page-hero-title">The <span class="saffron-word">Blog</span></h1>
+            <p class="page-hero-sub">Thoughtful analysis, sharp opinions, and original ideas from the members of Think India NIT Patna.</p>
+        </div>
+    </section>
+
+    <section class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">Articles</div>
+            <h2 class="sec-title reveal rd1">Latest <span class="accent">Posts</span></h2>
+
+            <div class="blog-filter-bar reveal rd2">
+                <button class="blog-filter-btn active" onclick="filterBlog('all', this)">All</button>
+                <button class="blog-filter-btn" onclick="filterBlog('policy', this)">Policy</button>
+                <button class="blog-filter-btn" onclick="filterBlog('leadership', this)">Leadership</button>
+                <button class="blog-filter-btn" onclick="filterBlog('culture', this)">Culture</button>
+            </div>
+
+            <div class="blog-page-grid" id="blogGrid">
+                <div class="blog-card reveal rd1" data-category="policy">
+                    <div class="blog-thumb"><img src="blog-policy.png" alt="NEP 2020" loading="lazy"></div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag bt-s">Policy</span>
+                        <h3>India's NEP 2020: A Decade of Implementation Challenges</h3>
+                        <p class="blog-excerpt">Three years after rollout, what has actually changed in classrooms? A critical assessment of the National Education Policy's ground-level impact across Bihar and UP.</p>
+                        <div class="blog-foot"><span>Ankit Raj · Jan 2025</span><a href="#" class="blog-read">Read →</a></div>
+                    </div>
+                </div>
+                <div class="blog-card reveal rd2" data-category="leadership">
+                    <div class="blog-thumb"><img src="blog-leadership.png" alt="Student Leadership" loading="lazy"></div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag bt-b">Leadership</span>
+                        <h3>What Student Leaders Get Wrong About 'Nation First'</h3>
+                        <p class="blog-excerpt">Nationalism without nuance is noise. The leadership India needs isn't performative patriotism — it's quiet, disciplined, long-term commitment.</p>
+                        <div class="blog-foot"><span>Priya Singh · Feb 2025</span><a href="#" class="blog-read">Read →</a></div>
+                    </div>
+                </div>
+                <div class="blog-card reveal rd3" data-category="culture">
+                    <div class="blog-thumb"><img src="blog-culture.png" alt="Ganga and Identity" loading="lazy"></div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag bt-g">Culture</span>
+                        <h3>The River and the Engineer: Ganga, Identity, and NIT Patna</h3>
+                        <p class="blog-excerpt">Sitting on the banks of the Ganga, our campus has a geographic identity few institutions can claim. What does that mean for development?</p>
+                        <div class="blog-foot"><span>Rohan Das · Mar 2025</span><a href="#" class="blog-read">Read →</a></div>
+                    </div>
+                </div>
+                <div class="blog-card reveal rd1" data-category="policy">
+                    <div class="blog-thumb"><img src="ev-policy.png" alt="Digital India" loading="lazy"></div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag bt-s">Policy</span>
+                        <h3>Digital India at 10: What Worked, What Didn't, and What Comes Next</h3>
+                        <p class="blog-excerpt">A decade of digital transformation in government services. We assess the successes, the failures, and the road ahead for India's digital governance framework.</p>
+                        <div class="blog-foot"><span>Vikram Sen · Dec 2024</span><a href="#" class="blog-read">Read →</a></div>
+                    </div>
+                </div>
+                <div class="blog-card reveal rd2" data-category="leadership">
+                    <div class="blog-thumb"><img src="ev-leadership.png" alt="Campus Leaders" loading="lazy"></div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag bt-b">Leadership</span>
+                        <h3>From Campus to Parliament: The Path for Student Leaders</h3>
+                        <p class="blog-excerpt">Student politics gets a bad name, but the skills it builds are exactly what India's governance needs. A case for taking student leadership seriously.</p>
+                        <div class="blog-foot"><span>Meera Patel · Nov 2024</span><a href="#" class="blog-read">Read →</a></div>
+                    </div>
+                </div>
+                <div class="blog-card reveal rd3" data-category="culture">
+                    <div class="blog-thumb"><img src="ev-community.png" alt="Rural Bihar" loading="lazy"></div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag bt-g">Culture</span>
+                        <h3>Why Bihar's Cultural Renaissance Matters to All of India</h3>
+                        <p class="blog-excerpt">Bihar has always punched above its weight intellectually. From Nalanda to modern movements, the state's cultural resurgence is a national asset.</p>
+                        <div class="blog-foot"><span>Aditya Kumar · Oct 2024</span><a href="#" class="blog-read">Read →</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-tricolour"><div></div><div></div><div></div></div>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-title">Think India</div>
+                    <span class="footer-brand-sub">NIT Patna Chapter</span>
+                    <p>A forum of thinkers, innovators, and leaders committed to building a stronger India.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="f-social">in</a><a href="#" class="f-social">ig</a>
+                        <a href="#" class="f-social">yt</a><a href="#" class="f-social">tw</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <a href="about.html">About</a><a href="events.html">Events</a>
+                    <a href="team.html">Team</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <a href="contact.html">Join Think India</a><a href="contact.html">Contact Us</a>
+                    <a href="#">Think India National</a>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2025 <span class="hl">Think India NIT Patna</span>. All rights reserved. &nbsp;|&nbsp; <span class="hl">जय हिन्द</span></div>
+        </div>
+    </footer>
+
+    <!-- FLOATING CTA (FAB) -->
+    <div class="floating-cta" id="floatingCta">
+        <a href="contact.html">
+            <span class="cta-icon">🇮🇳</span>
+            <span class="cta-text">Join Chapter</span>
+        </a>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script>
+        function filterBlog(category, btn) {
+            document.querySelectorAll('.blog-filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.blog-card').forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Think India NIT Patna</title>
+    <meta name="description" content="Learn about Think India NIT Patna — our history, mission, vision, values, and the story behind India's student-led nation-building movement.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    
+    <div class="tricolour-bar"><div></div><div></div><div></div></div>
+    <div class="scroll-progress" id="scrollProg"></div>
+
+    <nav id="navbar">
+        <a href="index.html" class="nav-logo">
+            <svg class="nav-logo-chakra" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="46" stroke="#FF9933" stroke-width="1.5" />
+                <circle cx="50" cy="50" r="5" fill="#000080" /><circle cx="50" cy="50" r="2" fill="#FF9933" />
+                <g stroke="#000080" stroke-width="1">
+                    <line x1="50" y1="4" x2="50" y2="45" /><line x1="69.1" y1="9.3" x2="54.8" y2="47.5" />
+                    <line x1="84.7" y1="22.3" x2="56.1" y2="52.3" /><line x1="93.3" y1="40.8" x2="55.5" y2="52.1" />
+                    <line x1="93.3" y1="59.2" x2="55.5" y2="47.9" /><line x1="84.7" y1="77.7" x2="56.1" y2="47.7" />
+                    <line x1="69.1" y1="90.7" x2="54.8" y2="52.5" /><line x1="50" y1="96" x2="50" y2="55" />
+                    <line x1="30.9" y1="90.7" x2="45.2" y2="52.5" /><line x1="15.3" y1="77.7" x2="43.9" y2="47.7" />
+                    <line x1="6.7" y1="59.2" x2="44.5" y2="47.9" /><line x1="6.7" y1="40.8" x2="44.5" y2="52.1" />
+                    <line x1="15.3" y1="22.3" x2="43.9" y2="52.3" /><line x1="30.9" y1="9.3" x2="45.2" y2="47.5" />
+                    <line x1="59.5" y1="5.5" x2="51.6" y2="45.2" /><line x1="78.5" y1="15" x2="55.2" y2="49.5" />
+                    <line x1="91.5" y1="31.8" x2="54.8" y2="51.4" /><line x1="96.5" y1="50" x2="55" y2="50" />
+                    <line x1="91.5" y1="68.2" x2="54.8" y2="48.6" /><line x1="78.5" y1="85" x2="55.2" y2="50.5" />
+                    <line x1="59.5" y1="94.5" x2="51.6" y2="54.8" /><line x1="40.5" y1="94.5" x2="48.4" y2="54.8" />
+                    <line x1="21.5" y1="85" x2="44.8" y2="50.5" /><line x1="8.5" y1="68.2" x2="45.2" y2="48.6" />
+                </g>
+            </svg>
+            <div class="nav-logo-text"><span class="main">Think India</span><span class="sub">NIT Patna</span></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="index.html#vision">Vision</a></li>
+            <li><a href="index.html#activities">Activities</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="nav-cta-li"><a href="contact.html" class="nav-cta">Join Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html" onclick="closeMenu()">About</a>
+        <a href="index.html#vision" onclick="closeMenu()">Vision</a>
+        <a href="events.html" onclick="closeMenu()">Events</a>
+        <a href="team.html" onclick="closeMenu()">Team</a>
+        <a href="gallery.html" onclick="closeMenu()">Gallery</a>
+        <a href="blog.html" onclick="closeMenu()">Blog</a>
+        <a href="contact.html" class="cta-mob" onclick="closeMenu()">Join Us →</a>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('about-section.png')"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <div class="hero-flag-badge">
+                <div class="flag-mini"><div></div><div><div class="dot"></div></div><div></div></div>
+                <span>Our Story</span>
+            </div>
+            <h1 class="page-hero-title">About <span class="saffron-word">Think India</span></h1>
+            <p class="page-hero-sub">The story of India's most ambitious student-led movement for national consciousness.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="section-pad">
+        <div class="container">
+            <div class="about-full-layout">
+                <div class="about-full-image reveal">
+                    <img src="hero-bg.png" alt="Think India students on campus" loading="lazy">
+                </div>
+                <div class="about-full-text reveal rd2">
+                    <div class="sec-label">The National Movement</div>
+                    <h2 class="sec-title">Born from <span class="accent">Conviction</span></h2>
+                    <p class="about-body" style="margin-top:1.5rem">Born in 2006 in the corridors of IISc and IIM Bangalore, Think India emerged from a simple, powerful conviction: India's students must not be passive observers of their nation's story. They must be its authors.</p>
+                    <div class="about-quote">"The youth of India are not a statistic. They are the strategy."</div>
+                    <p class="about-body">Today, Think India is present across 150+ premier universities — IITs, NITs, IIMs, central universities — building India's most robust network of intellectually engaged, nationally conscious young citizens.</p>
+                    <div style="margin-top:1rem">
+                        <span class="about-pill">IISc Founded</span>
+                        <span class="about-pill">IIM Bangalore</span>
+                        <span class="about-pill">150+ Institutes</span>
+                        <span class="about-pill">Nation First</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NIT PATNA CHAPTER -->
+    <section class="section-pad" style="background: var(--bg-alt)">
+        <div class="container">
+            <div class="about-full-layout about-reverse">
+                <div class="about-full-text reveal">
+                    <div class="sec-label">NIT Patna Chapter</div>
+                    <h2 class="sec-title">On the Banks <span class="accent">of the Ganga</span></h2>
+                    <p class="about-body" style="margin-top:1.5rem">Founded in 2023 on the banks of the Ganga in the historic heartland of Bihar, the NIT Patna chapter carries forward a legacy of intellectual courage. We are students who refuse to separate their engineering education from their national responsibility.</p>
+                    <div class="about-quote">"We don't just study India's problems. We train ourselves to solve them."</div>
+                    <p class="about-body">From policy drafting competitions to grassroots outreach, every Think India NIT Patna activity is designed to produce citizens who are as capable in the real world as they are in the classroom.</p>
+                    <div style="margin-top:1rem">
+                        <span class="about-pill">Est. 2023</span>
+                        <span class="about-pill">NIT Patna</span>
+                        <span class="about-pill">Student Led</span>
+                        <span class="about-pill">Bihar's Finest</span>
+                    </div>
+                </div>
+                <div class="about-full-image reveal rd2">
+                    <img src="about-section.png" alt="Students collaborating at NIT Patna" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section-pad">
+        <div class="container">
+            <div class="sec-label reveal">Our Journey</div>
+            <h2 class="sec-title reveal rd1">The <span class="accent">Timeline</span></h2>
+            <div class="timeline">
+                <div class="timeline-item reveal rd1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2006</div>
+                    <h3>Think India Founded</h3>
+                    <p>Established at IISc and IIM Bangalore by a group of visionary students who believed in the power of informed youth.</p>
+                </div>
+                <div class="timeline-item reveal rd2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2010</div>
+                    <h3>Expanding Across IITs</h3>
+                    <p>Think India chapters established across major IITs and IIMs, creating a nationwide network of student thinkers.</p>
+                </div>
+                <div class="timeline-item reveal rd3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2018</div>
+                    <h3>150+ Institutes</h3>
+                    <p>Think India grew to become India's largest student-led policy and leadership forum, spanning over 150 premier institutions.</p>
+                </div>
+                <div class="timeline-item reveal rd4">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2023</div>
+                    <h3>NIT Patna Chapter Born</h3>
+                    <p>The NIT Patna chapter was inaugurated, bringing Think India's vision to Bihar's premier engineering institution.</p>
+                </div>
+                <div class="timeline-item reveal rd5">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2026</div>
+                    <h3>Youth Jam &amp; Beyond</h3>
+                    <p>Hosting major events like Youth Jam 2026, National Debate Championship, and Policy Drafting Challenge — the movement grows stronger.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-pad" style="background: var(--bg-alt)">
+        <div class="container" style="text-align:center">
+            <h2 class="sec-title reveal">Ready to Write India's <span class="accent">Next Chapter?</span></h2>
+            <p class="reveal rd1" style="color:var(--text-secondary);margin:1.5rem auto;max-width:500px;line-height:1.8">Join a community of thinkers, builders, and leaders. Together, we are the strategy.</p>
+            <div class="reveal rd2">
+                <a href="contact.html" class="btn-saffron">Join Think India →</a>
+                <a href="events.html" class="btn-ghost" style="margin-left:1rem">View Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-tricolour"><div></div><div></div><div></div></div>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-title">Think India</div>
+                    <span class="footer-brand-sub">NIT Patna Chapter</span>
+                    <p>A forum of thinkers, innovators, and leaders committed to building a stronger India.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="f-social">in</a><a href="#" class="f-social">ig</a>
+                        <a href="#" class="f-social">yt</a><a href="#" class="f-social">tw</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <a href="about.html">About</a><a href="index.html#vision">Vision</a>
+                    <a href="events.html">Events</a><a href="team.html">Team</a>
+                    <a href="gallery.html">Gallery</a><a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <a href="contact.html">Join Think India</a><a href="index.html#initiatives">Initiatives</a>
+                    <a href="contact.html">Contact Us</a><a href="#">Think India National</a>
+                </div>
+            </div>
+            <div class="footer-bottom">&copy; 2025 <span class="hl">Think India NIT Patna</span>. All rights reserved. &nbsp;|&nbsp; <span class="hl">जय हिन्द</span></div>
+        </div>
+    </footer>
+    <!-- FLOATING CTA (FAB) -->
+    <div class="floating-cta" id="floatingCta">
+        <a href="contact.html">
+            <span class="cta-icon">🇮🇳</span>
+            <span class="cta-text">Join Chapter</span>
+        </a>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
