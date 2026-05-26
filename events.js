@@ -34,25 +34,58 @@ updateCountdowns();
 setInterval(updateCountdowns, 1000);
 
 // ── FILTER LOGIC ──
+let filterTimeout = null;
+
 function filterEvents(filter, btn) {
+    // Cancel any pending visibility toggling timeouts
+    if (filterTimeout) {
+        clearTimeout(filterTimeout);
+    }
+
     // Update active button
     document.querySelectorAll('.ev-filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 
     const items = document.querySelectorAll('.event-item');
+    const sections = ['live-events', 'upcoming-events', 'past-events'];
+
+    // 1. Instantly show all sections that might contain items so they can transition in
+    sections.forEach(secId => {
+        const sec = document.getElementById(secId);
+        if (sec) sec.style.display = '';
+    });
+
+    // 2. Filter items with staggered transitions
+    let visibleIndex = 0;
     items.forEach(item => {
         const status = item.dataset.status;
         if (filter === 'all' || status === filter) {
+            // Remove hidden state
             item.classList.remove('ev-hidden');
+            // Stagger entrance transitions
+            item.style.transitionDelay = `${visibleIndex * 60}ms`;
+            visibleIndex++;
         } else {
+            // Add hidden state immediately
+            item.style.transitionDelay = '0ms';
             item.classList.add('ev-hidden');
         }
     });
 
-    // Show/hide section headings based on visible items
-    toggleSectionVisibility('live-events', '#liveGrid .event-item:not(.ev-hidden)');
-    toggleSectionVisibility('upcoming-events', '#upcomingGrid .event-item:not(.ev-hidden)');
-    toggleSectionVisibility('past-events', '#pastGrid .event-item:not(.ev-hidden)');
+    // 3. Smooth scroll lock to the top of the event filter strip/grid so the user doesn't lose placement
+    const filterStrip = document.querySelector('.ev-filter-strip');
+    if (filterStrip) {
+        const yOffset = -85; // accounts for floating scrolled header height (80px + safety margin)
+        const y = filterStrip.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+
+    // 4. Wait for card transitions to finish before completely hiding empty sections
+    filterTimeout = setTimeout(() => {
+        toggleSectionVisibility('live-events', '#liveGrid .event-item:not(.ev-hidden)');
+        toggleSectionVisibility('upcoming-events', '#upcomingGrid .event-item:not(.ev-hidden)');
+        toggleSectionVisibility('past-events', '#pastGrid .event-item:not(.ev-hidden)');
+    }, 450); // Matches CSS transition duration of 0.45s
 }
 
 function toggleSectionVisibility(sectionId, selector) {
